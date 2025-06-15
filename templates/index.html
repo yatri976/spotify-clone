@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 121609.png') }}" alt="Spotify Logo">
+            <h2><span class="logo-text">Spotify</span></h2>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Your Library</li>
+            <li>Liked Songs</li>
+            <li>Made for You</li>
+            <li>Top Charts</li>
+        </ul>
+    </div>
+
+    <div class="main-header">
+        <div class="welcome-text">Good Afternoon</div>
+        <div class="user-profile">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 145235.png') }}" alt="User">
+            <span>Yatri</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2 class="section-title">Picked for you</h2>
+        <div class="card-horizontal">
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 120315.png') }}" alt="Deep Forest">
+                <p>Deep Forest Mix</p>
+            </div>
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115055.png') }}" alt="Arijit Singh">
+                <p>Arijit Singh Mix</p>
+            </div>
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115033.png') }}" alt="The Weeknd">
+                <p>The Weeknd</p>
+            </div>
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 141118.png') }}" alt="A.R. Rahman">
+                <p>A.R. Rahman</p>
+            </div>
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 141146.png') }}" alt="Taylor Swift">
+                <p>Taylor Swift</p>
+            </div>
+            <div class="card small">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 141222.png') }}" alt="Enigma">
+                <p>Enigma</p>
+            </div>
+        </div>
+
+        
+
+        <h2 class="section-title">Jump back in</h2>
+        <div class="card-grid vertical-layout">
+            <!-- Vertical cards -->
+            <div class="card card-vertical">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115033.png') }}" alt="Blinding Lights">
+                <p>Blinding Lights</p>
+            </div>
+            <div class="card card-vertical">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115055.png') }}" alt="Kesariya">
+                <p>Kesariya</p>
+            </div>
+            <div class="card card-vertical">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 144938.png') }}" alt="Closer">
+                <p>Closer</p>
+            </div>
+        </div>
+
+        <div class="mood-banner">
+            <h2>🎧 Mood: Chill Vibes</h2>
+            <p>Relax and vibe with our smoothest tunes handpicked for your mood.</p>
+        </div>
+
+        
+
+        <div class="featured-artist">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115055.png') }}" alt="Arijit Singh">
+            <div class="info">
+                <h3>🎤 Featured Artist: Arijit Singh</h3>
+                <p>India’s voice of love and emotion. Discover his most iconic hits.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">🎧 Recently Played</h2>
+        <div class="song-list">
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115033.png') }}" alt="Blinding Lights">
+                    <div class="song-details">
+                        <div class="title">Blinding Lights</div>
+                        <div class="artist">The Weeknd</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:20</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135141.png') }}" alt="Kesariya">
+                    <div class="song-details">
+                        <div class="title">Kesariya</div>
+                        <div class="artist">Arijit Singh</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:58</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 144938.png') }}" alt="Closer">
+                    <div class="song-details">
+                        <div class="title">Closer</div>
+                        <div class="artist">Chainsmokers</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:45</div>
+            </div>
+        </div>
+
+<!-- Genre tags -->
+        <div class="genre-tags">
+            <span>#Pop</span>
+            <span>#Bollywood</span>
+            <span>#Romantic</span>
+            <span>#LoFi</span>
+            <span>#English</span>
+        </div>
+
+        <h2 class="section-title">🎯 Suggested for You</h2>
+        <div class="song-list">
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135209.png') }}" alt="Stay">
+                    <div class="song-details">
+                        <div class="title">Stay</div>
+                        <div class="artist">Justin Bieber</div>
+                    </div>
+                </div>
+                <div class="song-duration">2:40</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135244.png') }}" alt="Ghungroo">
+                    <div class="song-details">
+                        <div class="title">Ghungroo</div>
+                        <div class="artist">Arijit Singh</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:35</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135319.png') }}" alt="Something Just Like This">
+                    <div class="song-details">
+                        <div class="title">Something Just Like This</div>
+                        <div class="artist">Chainsmokers & Coldplay</div>
+                    </div>
+                </div>
+                <div class="song-duration">4:00</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Popular Artists</h2>
+        <div class="artist-card-grid">
+            <!-- Vertical cards -->
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 141146.png') }}" alt="Taylor Swift">
+                <p>Taylor Swift</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 142757.png') }}" alt="Kishore Kumar">
+                <p>Kishore Kumar</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115033.png') }}" alt="The Weeknd">
+                <p>The Weeknd</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 142451.png') }}" alt="Sonu Nigam">
+                <p>Sonu Nigam</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 143136.png') }}" alt="Lata Mangeshkar">
+                <p>Lata Mangeshkar</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 143158.png') }}" alt="Hans Zimmer">
+                <p>Hans Zimmer</p>
+            </div>
+            <div class="artist-card">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 141118.png') }}" alt="A.R. Rahman">
+                <p>A.R. Rahman</p>
+            </div>
+        </div>
+
+
+        <h2 class="section-title">🔥 Trending Now</h2>
+        <div class="song-list">
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135344.png') }}" alt="Levitating">
+                    <div class="song-details">
+                        <div class="title">Levitating</div>
+                        <div class="artist">Dua Lipa</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:24</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 171343.png') }}" alt="Peaches">
+                    <div class="song-details">
+                        <div class="title">Peaches</div>
+                        <div class="artist">Justin Bieber</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:18</div>
+            </div>
+
+            <div class="song-row">
+                <div class="song-info-block">
+                    <img src="{{ url_for('static', filename='images/Screenshot 2025-06-13 135511.png') }}" alt="Calm Down">
+                    <div class="song-details">
+                        <div class="title">Calm Down</div>
+                        <div class="artist">Rema</div>
+                    </div>
+                </div>
+                <div class="song-duration">3:34</div>
+            </div>
+        </div>
+
+    <div class="right-sidebar">
+        <h2>This Is Justin Bieber</h2>
+
+        <div class="now-playing-preview">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 171343.png') }}" alt="Album Cover">
+            <div class="track-title">Peaches</div>
+            <div class="track-artist">Justin Bieber</div>
+        </div>
+
+        <div class="right-box">
+            <h3>Credits</h3>
+            <p><strong>Justin Bieber</strong><br>Main Artist, Composer</p>
+        </div>
+
+        <div class="right-box">
+            <h3>Next in queue</h3>
+            <div class="queue-item">
+                <img src="{{ url_for('static', filename='images/Screenshot 2025-06-12 181049.png') }}" alt="Next Song">
+                <div class="info">
+                    <div class="title">Ghost</div>
+                    <div class="artist">Justin Bieber</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-player">
+        <div class="footer-left">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-11 115033.png') }}" alt="Now Playing">
+            <div class="song-info">
+                <p class="song-title">Blinding Lights</p>
+                <p class="song-artist">The Weeknd</p>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div class="controls">
+                <button title="Previous">⏮</button>
+                <button class="play" title="Play/Pause">▶️</button>
+                <button title="Next">⏭</button>
+            </div>
+            <div class="progress-bar">
+                <span class="time">1:25</span>
+                <input type="range" min="0" max="100" value="45">
+                <span class="time">3:20</span>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <button title="Volume">🔊</button>
+            <input type="range" min="0" max="100" value="80">
+        </div>
+    </div>
+    
+
+</body>
+</html>
